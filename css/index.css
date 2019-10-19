@@ -1,3 +1,17 @@
+.flexBox {
+  display: flex;
+}
+.sectionBorder {
+  padding-top: 25px;
+}
+.sectionBorder .borderHr {
+  height: 15px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #bdb9ff inset;
+}
+.mobileMargin {
+  margin: 5% 10%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -465,4 +479,131 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+body {
+  background-color: #e5e3ff;
+}
+body .head {
+  display: flex;
+  justify-content: space-evenly;
+}
+body .head .headerH1 {
+  color: #6459ff;
+}
+body .head .headerLink {
+  font-size: 2.5rem;
+  text-decoration: none;
+  height: 30px;
+  margin: 3rem 0;
+  color: #6459ff;
+}
+body .head .headerLink:hover {
+  text-decoration: underline;
+}
+body .appSection {
+  padding-top: 25px;
+}
+body .appSection .borderHr {
+  height: 15px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #bdb9ff inset;
+}
+body .appSection .appContent {
+  display: flex;
+  flex-direction: column;
+}
+body .appSection .appContent .cta {
+  height: auto;
+  width: 80%;
+  background-color: #bdb9ff;
+  margin: 5% 10%;
+  padding-top: 20px;
+  color: #8077ff;
+  text-align: center;
+  line-height: 2;
+}
+body .appSection .appContent .loginSection {
+  height: auto;
+  width: 80%;
+  margin: 5% 10%;
+}
+body .appSection .appContent .loginSection .inputArea {
+  padding-top: 40px;
+}
+body .appSection .appContent .loginSection .inputArea .line {
+  height: 1px;
+}
+body .appSection .appContent .loginSection .inputArea .lineEntry {
+  color: #bdb9ff;
+  font-size: 2rem;
+}
+body .appSection .appContent .loginSection .instructions {
+  text-align: center;
+  color: #9d96ff;
+  padding: 30px 0px;
+}
+@media (min-width: 768px) {
+  body .appSection .appContent {
+    flex-direction: row;
+  }
+}
+body .aboutSection {
+  padding-top: 25px;
+}
+body .aboutSection .borderHr {
+  height: 15px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #bdb9ff inset;
+}
+body .aboutSection .aboutContent {
+  display: flex;
+  flex-direction: column-reverse;
+}
+body .aboutSection .aboutContent .teamMembers {
+  height: auto;
+  width: 80%;
+  margin: 5% 10%;
+  text-align: center;
+  color: #8077ff;
+}
+body .aboutSection .aboutContent .teamMembers .memberNames {
+  font-size: 3rem;
+}
+body .aboutSection .aboutContent .teamBox {
+  height: 80px;
+  width: 80%;
+  background-color: #bdb9ff;
+  margin: 5% 10%;
+  display: flex;
+  justify-content: center;
+}
+body .aboutSection .aboutContent .teamBox .teamText {
+  padding-top: 10px;
+  text-align: center;
+  align-self: center;
+  color: #8077ff;
+}
+body .faqSection {
+  padding-top: 25px;
+}
+body .faqSection .borderHr {
+  height: 15px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #bdb9ff inset;
+}
+body .faqSection .faqContent {
+  display: flex;
+  flex-direction: column;
+  margin: 5% 10%;
+}
+body .faqSection .faqContent .faqQuestions {
+  height: auto;
+  width: 80%;
+  background-color: #e5e3ff;
+}
+body .faqSection .faqContent .faqQuestions .text {
+  color: #8077ff;
+}
+body .faqSection .faqContent .faqQuestions .tab {
+  padding-left: 20px;
 }

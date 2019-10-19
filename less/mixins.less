@@ -1,0 +1,28 @@
+.flexBox{
+    display: flex;
+}
+
+.sectionBorder {
+    padding-top: 25px;
+
+    .borderHr {
+        height: 15px;
+        border: 0;
+        box-shadow: 0 10px 10px -10px @textBox inset;
+    }
+}
+
+.mobileFlex (@direction){
+    .flexBox();
+    flex-direction: @direction;
+}
+
+.box(@height, @width, @bgColor) {
+    height: @height;
+    width: @width;
+    background-color: @bgColor;
+}
+
+.mobileMargin {                    
+    margin: 5% 10%;
+}
