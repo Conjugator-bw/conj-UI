@@ -1,0 +1,171 @@
+body {
+    background-color: #e5e3ff;
+
+
+// HEADER SECTION
+
+
+    .head {
+        .flexBox();
+        justify-content: space-evenly;
+
+        .headerH1{
+            color: @headerText;
+        }
+    
+        .headerLink {
+            font-size: 2.5rem;
+            text-decoration: none;
+            height: 30px;
+            margin: 3rem 0;
+            color: @headerText;
+        }
+    
+        .headerLink:hover {
+            text-decoration: underline;
+        }
+
+        @media (min-width: 768px) {
+
+        }
+
+        @media (min-width: 1000px) {
+            
+        }
+    }
+
+
+// CONJUGATOR APP SECTION
+
+    
+    .appSection {
+        .sectionBorder();
+
+        .appContent{
+            .mobileFlex(column);
+
+            .cta{
+                .box(auto,80%, @textBox);
+                .mobileMargin();
+                padding-top: 20px;
+                color: @textDark;
+                text-align: center;
+                line-height: 2;                
+            }
+
+            .loginSection{
+                height: auto;
+                width: 80%;
+                margin: 5% 10%;
+
+                .inputArea{
+                    padding-top: 40px;
+
+                    .line{
+                        height: 1px;            
+                    }
+        
+                    .lineEntry{                    
+                        color: @textBox;
+                        font-size: 2rem;
+                    }
+                }
+                
+                .instructions{
+                    text-align: center;
+                    color: @textLite;
+                    padding: 30px 0px;
+                }
+            }
+
+
+            @media (min-width: 768px) {
+                flex-direction: row;             
+            }
+
+            @media (min-width: 1000px) {
+                
+            }
+        }
+    }
+
+
+// ABOUT SECTION
+
+
+    .aboutSection {
+        .sectionBorder();
+
+        .aboutContent {
+            .mobileFlex(column-reverse);
+
+            .teamMembers {
+                height: auto;
+                width: 80%;
+                margin: 5% 10%;
+                text-align: center;
+                color: @textDark;
+
+                .memberNames {
+                    font-size: 3rem;
+                }                
+            }
+
+            .teamBox {
+                .box(80px,80%, @textBox);
+                .mobileMargin();
+                .flexBox();                
+                justify-content: center;
+
+                .teamText { 
+                    padding-top: 10px;                   
+                    text-align: center;
+                    align-self: center;
+                    color: @textDark;
+                }
+            }
+        }
+
+        @media (min-width: 768px) {
+
+        }
+
+        @media (min-width: 1000px) {
+            
+        }
+    }
+
+
+// FAQ SECTION
+
+    
+    .faqSection {
+        .sectionBorder();
+
+        .faqContent {
+            .mobileFlex(column);            
+            .mobileMargin();
+
+            .faqQuestions {
+                .box(auto, 80%, #e5e3ff);
+
+
+                .text {
+                    color: @textDark;
+                }
+
+                .tab {
+                    padding-left: 20px;
+                }
+            }
+        }
+
+        @media (min-width: 768px) {
+
+        }
+
+        @media (min-width: 1000px) {
+            
+        }
+    }
+}
