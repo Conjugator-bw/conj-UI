@@ -480,25 +480,50 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-body {
-  background-color: #e5e3ff;
+.headSecion {
+  padding-top: 25px;
 }
-body .head {
+.headSecion .borderHr {
+  height: 15px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #bdb9ff inset;
+}
+.headSecion .headContent {
   display: flex;
   justify-content: space-evenly;
 }
-body .head .headerH1 {
+.headSecion .headContent .headerH1 {
   color: #6459ff;
 }
-body .head .headerLink {
+.headSecion .headContent .headerLink {
   font-size: 2.5rem;
   text-decoration: none;
   height: 30px;
   margin: 3rem 0;
   color: #6459ff;
 }
-body .head .headerLink:hover {
+.headSecion .headContent .headerLink:hover {
   text-decoration: underline;
+}
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.footerContainer p {
+  font-size: 0.8rem;
+}
+.footerContainer .homeButton {
+  font-size: 1rem;
+  padding-bottom: 25%;
+}
+@media (min-width: 1000px) {
+  .footerContainer {
+    justify-content: space-around;
+  }
+}
+body {
+  background-color: #e5e3ff;
 }
 body .appSection {
   padding-top: 25px;
@@ -509,18 +534,21 @@ body .appSection .borderHr {
   box-shadow: 0 10px 10px -10px #bdb9ff inset;
 }
 body .appSection .appContent {
-  display: flex;
   flex-direction: column;
+  display: flex;
 }
 body .appSection .appContent .cta {
+  display: flex;
   height: auto;
   width: 80%;
   background-color: #bdb9ff;
   margin: 5% 10%;
-  padding-top: 20px;
   color: #8077ff;
   text-align: center;
   line-height: 2;
+  background-image: linear-gradient(#e5e3ff, white);
+  border-radius: 12px;
+  justify-content: center;
 }
 body .appSection .appContent .loginSection {
   height: auto;
@@ -542,9 +570,29 @@ body .appSection .appContent .loginSection .instructions {
   color: #9d96ff;
   padding: 30px 0px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   body .appSection .appContent {
     flex-direction: row;
+  }
+  body .appSection .appContent p {
+    text-align: center;
+  }
+  body .appSection .appContent .line {
+    width: 75%;
+    padding: 5% 0;
+  }
+  body .appSection .appContent .lineEntry {
+    padding: 3% 5% 5%;
+  }
+  body .appSection .appContent .instructions {
+    text-align: left;
+    padding: 10px 0;
+  }
+  body .appSection .appContent .cta {
+    height: auto;
+    width: 80%;
+    background-color: #bdb9ff;
+    align-items: center;
   }
 }
 body .aboutSection {
@@ -558,6 +606,12 @@ body .aboutSection .borderHr {
 body .aboutSection .aboutContent {
   display: flex;
   flex-direction: column-reverse;
+  /*** Media Query **/
+}
+@media (min-width: 1000px) {
+  body .aboutSection .aboutContent {
+    flex-direction: row;
+  }
 }
 body .aboutSection .aboutContent .teamMembers {
   height: auto;
@@ -567,7 +621,24 @@ body .aboutSection .aboutContent .teamMembers {
   color: #8077ff;
 }
 body .aboutSection .aboutContent .teamMembers .memberNames {
-  font-size: 3rem;
+  font-size: 1.75rem;
+  text-align: left;
+  margin-left: 20%;
+  border-left: 1px solid purple;
+  padding-left: 3%;
+}
+@media (min-width: 1000px) {
+  body .aboutSection .aboutContent .teamMembers {
+    padding-right: 5px;
+  }
+  body .aboutSection .aboutContent .teamMembers .memberNames {
+    font-size: 2rem;
+    text-align: left;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    align-items: center;
+  }
 }
 body .aboutSection .aboutContent .teamBox {
   height: 80px;
@@ -576,6 +647,8 @@ body .aboutSection .aboutContent .teamBox {
   margin: 5% 10%;
   display: flex;
   justify-content: center;
+  background-image: linear-gradient(#e5e3ff, white);
+  border-radius: 5px;
 }
 body .aboutSection .aboutContent .teamBox .teamText {
   padding-top: 10px;
@@ -596,14 +669,78 @@ body .faqSection .faqContent {
   flex-direction: column;
   margin: 5% 10%;
 }
+@media (min-width: 1000px) {
+  body .faqSection .faqContent {
+    flex-direction: row;
+  }
+}
 body .faqSection .faqContent .faqQuestions {
   height: auto;
   width: 80%;
   background-color: #e5e3ff;
 }
+body .faqSection .faqContent .faqQuestions p {
+  padding: 5%;
+  border-left: 1px solid purple;
+}
 body .faqSection .faqContent .faqQuestions .text {
   color: #8077ff;
 }
-body .faqSection .faqContent .faqQuestions .tab {
-  padding-left: 20px;
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+input[type=submit] {
+  background-color: #8077ff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+input[type=submit]:hover {
+  background-color: #6459ff;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.submit {
+  padding-top: 10px;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
