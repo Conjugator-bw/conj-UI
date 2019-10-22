@@ -29,11 +29,11 @@
             <div class="appContent">
 
                 <div class="cta">
-                    <h2>Think you're</br>a Spanish expert?</br>Try Conjugator</br>and find out!</h2>>               
+                    <h2>Think you're</br>a Spanish expert?</br>Try Conjugator</br>and find out!</h2>              
                 </div>
 
                 <div class="loginSection">
-                    <div class="inputArea">
+                    <!-- <div class="inputArea">
                         <hr class="line">
                         <p class="lineEntry">Spanish text</p>
                     </div>
@@ -41,8 +41,33 @@
                     <div class="inputArea">
                         <hr class="line">
                         <p class="lineEntry">Enter English translation</p>
-                    </div>
+                    </div> -->
                     
+
+                    <div class="container">
+                        <form action="/action_page.php">
+                            <div class="row">
+                              <div class="col-25">
+                                <label for="fname">Spanish Text</label>
+                              </div>
+                              <div class="col-75">
+                                <input type="text" id="fname" name="firstname" placeholder="Enter Spanish Verb">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-25">
+                                <label for="lname">English Translation</label>
+                              </div>
+                              <div class="col-75">
+                                <input type="text" id="lname" name="lastname" placeholder="Enter English Translation">
+                              </div>
+                            </div>
+                            <div class="row submit">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+
                     <p class="instructions">Instructions: The next Spanish word will appear once the correct English translation is detected</p>                
                 </div>
 
@@ -59,11 +84,19 @@
             <div class="aboutContent">
 
                 <div class="teamMembers">
-                    <p class="memberNames">Anita Garris,<br>
-                    Benjamin Quackenbush,<br>
-                    Brian Moir, Bryan Linnell,<br> 
-                    Christian Auld, Leo Torres,<br>
-                    Wade Coplen</p>
+                    <p class="memberNames">                        
+                        Anita<b>Garris</b>
+                        <br>  
+                        Benjamin<b>Quackenbush</b>
+                        <br>                  
+                        Brian<b>Moir</b>
+                        </br>
+                        Bryan<b>Linnell</b>
+                        <br> 
+                        Christian<b>Auld</b>
+                        </br>Leo<b>Torres</b>
+                        <br>
+                        Wade<b>Coplen</b></p>
                 </div>
 
                 <div class="teamBox">
@@ -98,9 +131,16 @@
 
 <!-- FOOTER SECTION -->
         
-        <footer class="foot">
-
-        </footer>
+        <section class= "footer">
+            <div class= "footerContainer">
+                <div>
+                    <p>Lambda School - Conjugator 2019 Copyright &copy</p>
+                </div>        
+                <div>            
+                    <a class= "homeButton" href= "index.html" alt= "home">Home</a>
+                </div>
+            </div>
+        </section>
 
     </body>
 
