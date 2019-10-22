@@ -480,21 +480,29 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.head {
+.headSecion {
+  padding-top: 25px;
+}
+.headSecion .borderHr {
+  height: 15px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #bdb9ff inset;
+}
+.headSecion .headContent {
   display: flex;
   justify-content: space-evenly;
 }
-.head .headerH1 {
+.headSecion .headContent .headerH1 {
   color: #6459ff;
 }
-.head .headerLink {
+.headSecion .headContent .headerLink {
   font-size: 2.5rem;
   text-decoration: none;
   height: 30px;
   margin: 3rem 0;
   color: #6459ff;
 }
-.head .headerLink:hover {
+.headSecion .headContent .headerLink:hover {
   text-decoration: underline;
 }
 .footerContainer {
